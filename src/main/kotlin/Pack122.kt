@@ -11,7 +11,7 @@ object Pack122 {
         val sc = Scanner(System.`in`)
         str = sc.next()
         //문자를 하나씩 확인하며
-        for (i in 0 until str.length) {
+        for (i in str.indices) {
             //알파벳인 경우 결과 리스트에 삽입
             if (Character.isLetter(str[i]))
                 result.add(str[i])
