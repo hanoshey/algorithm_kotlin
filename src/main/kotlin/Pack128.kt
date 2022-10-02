@@ -34,7 +34,7 @@ class Solution5 {
         for (i in weak.indices) weakList.add(weak[i] + n)
         //투입할 친구 수의 최솟값을 찾아야 하므로 len(dist) + 1로 초기화
         var answer = dist.size + 1
-        // 친구 정봏를 이용해 모든 순열 계산
+        // 친구 정보를 이용해 모든 순열 계산
         val perm = Permutation(dist.size, dist.size)
         perm.permutation(dist, 0)
         val distList = perm.result
