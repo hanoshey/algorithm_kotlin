@@ -7,7 +7,7 @@ class Node8(val stage: Int, private val fail: Double) : Comparable<Node8> {
 }
 
 class Solution7 {
-    fun solution(N: Int, stages: IntArray):IntArray {
+    fun solution(N: Int, stages: IntArray): IntArray {
         val answer = IntArray(N)
         val arrayList = ArrayList<Node8>()
         var length = stages.size
@@ -24,8 +24,7 @@ class Solution7 {
         //실패율을 기준으로 내림차순 정렬
         arrayList.sort()
         //정렬된 스테이지 번호 반환
-        for (i in 0 until N)
-            answer[i] = arrayList[i].stage
+        for (i in 0 until N) answer[i] = arrayList[i].stage
         return answer
     }
 }
