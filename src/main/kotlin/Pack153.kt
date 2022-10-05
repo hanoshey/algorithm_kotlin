@@ -30,9 +30,9 @@ object Pack153 {
             if (cnt >= c) {
                 start = mid + 1
                 result = mid//최적의 결과를 저장
-            }
+            } else end = mid - 1
             //C개 이상의 공유기를 설치할 수 없는 경우, 거리를 감소
-            else end = mid - 1
+
         }
         println(result)
     }
