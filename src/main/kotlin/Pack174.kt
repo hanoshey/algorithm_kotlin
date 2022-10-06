@@ -57,7 +57,7 @@ object Pack174 {
         for (i in 0..n)
             graph.add(ArrayList())
         //모든 간선 정보를 입력받기
-        for(i in 0 until m){
+        for (i in 0 until m) {
             val a = sc.nextInt()
             val b = sc.nextInt()
             //a번 노드에서 b번 노드로 가는 비용이 1라는 의미(양방향)
@@ -69,18 +69,18 @@ object Pack174 {
         //다익스트라 알고리즘을 수행
         dijkstra(start)
         //가장 최단 거리가 먼 노드 번호(동빈이가 숨은 헛간의 번호)
-        var maxNode=0
+        var maxNode = 0
         //도달할 수 있는 노드 중에서, 가장 최단 거리가 먼 노드와의 최단 거리
-        var maxDistance=0
+        var maxDistance = 0
         //가장 최단 거리가 먼 노드와의 최단 거리와 동일한 최단 거리를 가지는 노드들의 리스트
         val result = ArrayList<Int>()
-        for(i in 1..n){
-            if(maxDistance<d[i]) {
+        for (i in 1..n) {
+            if (maxDistance < d[i]) {
                 maxNode = i
                 maxDistance = d[i]
                 result.clear()
                 result.add(maxNode)
-            }else if(maxDistance==d[i]) result.add(i)
+            } else if (maxDistance == d[i]) result.add(i)
         }
         println("$maxNode $maxDistance ${result.size}")
     }
