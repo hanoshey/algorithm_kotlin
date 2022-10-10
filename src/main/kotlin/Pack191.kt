@@ -6,15 +6,14 @@ object Pack191 {
     //맵의 크기 N
     var n = 0
     //맵 정보
-    val array = Array(20) { IntArray(20) }
     //상어의 현재 위치
+    val array = Array(20) { IntArray(20) }
     var shark = Fish(0, 0)
     //상어의 현재 크기
     var sharkSize = 2
     //상어가 먹은 물고기의 수
     val dx = intArrayOf(-1, 0, 1, 0)
     val dy = intArrayOf(0, 1, 0, -1)
-    var ate = 0
     fun bfs(): Array<IntArray> {
         val q: Queue<Fish> = LinkedList()
         //값이 -1이라면 도달할 수 없다는 의미
@@ -60,6 +59,7 @@ object Pack191 {
 
     @JvmStatic
     fun main(args: Array<String>) {
+        var ate = 0
         val sc = Scanner(System.`in`)
         n = sc.nextInt()
         for (i in 0 until n)
