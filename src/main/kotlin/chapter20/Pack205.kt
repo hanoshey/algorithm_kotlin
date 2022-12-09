@@ -1,4 +1,4 @@
-package Chapter20
+package chapter20
 
 object Pack205 {
     val n = 5//데이터의 개수 N과 데이터 입력받기

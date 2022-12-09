@@ -1,4 +1,4 @@
-package Chapter20
+package chapter20
 
 object Pack203 {
     val n = 5//데이터의 개수 N

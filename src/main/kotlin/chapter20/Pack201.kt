@@ -1,4 +1,4 @@
-package Chapter20
+package chapter20
 
 import kotlin.math.sqrt
 

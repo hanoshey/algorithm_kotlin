@@ -1,4 +1,4 @@
-package Chapter20
+package chapter20
 
 object Pack204 {
     //사전에 정렬된 리스트 A와 B 선언
@@ -31,5 +31,4 @@ object Pack204 {
         }
         result.forEach { print("$it ") }
     }
-
 }
