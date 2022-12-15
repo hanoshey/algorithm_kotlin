@@ -15,7 +15,7 @@ object Pack132 {
     val dy = intArrayOf(0, 1, 0, -1)
 
     //DFS을 이용해 각 바이러스가 사방으로 퍼지도록 하기
-    fun virus(x: Int, y: Int) {
+    private fun virus(x: Int, y: Int) {
         for (i in 0 until 4) {
             val nx = x + dx[i]
             val ny = y + dy[i]
@@ -31,7 +31,7 @@ object Pack132 {
     }
 
     //현재 맵에서 안전 영역의 크기 계산하는 메서드
-    fun getScore(): Int {
+    private fun getScore(): Int {
         var score = 0
         for (i in 0 until n)
             for (j in 0 until m)
@@ -41,7 +41,7 @@ object Pack132 {
     }
 
     //DFS를 이용해 울타리를 설치하면서, 매번 안전 영역의 크기 계산
-    fun dfs(count: Int) {
+    private fun dfs(count: Int) {
         var count = count
         if (count == 3) {
             for (i in 0 until n)

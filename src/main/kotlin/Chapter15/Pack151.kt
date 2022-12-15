@@ -3,7 +3,7 @@ package Chapter15
 import java.util.*
 
 object Pack151 {
-    fun lowerBound(arr: IntArray, target: Int, start: Int, end: Int): Int {
+    private fun lowerBound(arr: IntArray, target: Int, start: Int, end: Int): Int {
         var start = start
         var end = end
         while (start < end) {

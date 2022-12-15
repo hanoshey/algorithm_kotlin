@@ -13,8 +13,7 @@ fun fibonacci(n: Int): Int {
     return dp[n]
 }
 fun main() = with(System.`in`.bufferedReader()) {
-    val t = readLine().toInt()
-    for (i in 0 until t) {
+    repeat(readLine().toInt()) {
         val n = readLine().toInt()
         fibonacci(n)
         if(n==0) println("1 0")
