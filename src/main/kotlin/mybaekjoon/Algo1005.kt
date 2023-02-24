@@ -1,23 +1,16 @@
 package mybaekjoon
 
-import java.io.BufferedWriter
-import java.io.OutputStreamWriter
-import java.util.StringTokenizer
-
 fun main() = with(System.`in`.bufferedReader()) {
-    val bw = BufferedWriter(OutputStreamWriter(System.out))
     repeat(readLine().toInt()) {
-        val st = StringTokenizer(readLine()," ")
-        val (n, k) = st.nextToken().toInt() to st.nextToken().toInt()
-        val time = IntArray(n + 1)
+        val (n, k) = readLine().split(" ").map{it.toInt()}
+
         //시간
         val indegree = IntArray(n + 1) { 0 }
         //차원
         val graph = Array(n + 1) { IntArray(n + 1) { 0 } }
         val dp = IntArray(n + 1) { 0 }
         //다이나믹 프로그래밍 배열
-        for (i in 1..n)
-            time[i] = st.nextToken().toInt()
+        val time = listOf(0) + readLine().split(" ").map { it.toInt() }.toList()
         for (i in 0 until k) {
             val (a, b) = readLine().split(" ").map { it.toInt() }
             graph[a][b] = 1
@@ -42,8 +35,7 @@ fun main() = with(System.`in`.bufferedReader()) {
                         q[rear++] = i
                 }
         }
-        bw.write("${dp[w]}\n")
-        bw.flush()
+        System.out.bufferedWriter().append("${dp[w]}\n").flush()
     }
-    bw.close()
+    close()
 }
