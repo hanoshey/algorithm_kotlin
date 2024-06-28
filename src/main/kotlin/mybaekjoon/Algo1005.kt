@@ -1,6 +1,6 @@
 package mybaekjoon
 
-fun main() = with(System.`in`.bufferedReader()) {
+private fun main() = with(System.`in`.bufferedReader()) {
     repeat(readLine().toInt()) {
         val (n, k) = readLine().split(" ").map{it.toInt()}
 

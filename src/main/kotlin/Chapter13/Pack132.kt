@@ -3,7 +3,7 @@ package Chapter13
 import java.util.*
 import kotlin.math.max
 
-object Pack132 {
+private object Pack132 {
     var n = 0
     var m = 0
     var result = 0

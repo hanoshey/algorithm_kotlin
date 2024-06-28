@@ -1,8 +1,8 @@
 package Chapter16
 
-import java.util.Scanner
+import java.util.*
 
-object Pack165 {
+private object Pack165 {
     var n = 0
     val ugly = IntArray(1000)//못생긴 수를 담기 위한 테이블
 

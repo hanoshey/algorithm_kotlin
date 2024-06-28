@@ -2,13 +2,13 @@ package Chapter17
 
 import java.util.*
 
-class Node9(val x: Int, val y: Int, val distance: Int) : Comparable<Node9> {
+private class Node9(val x: Int, val y: Int, val distance: Int) : Comparable<Node9> {
     override fun compareTo(other: Node9): Int {
         return if (distance < other.distance) -1 else 1
     }
 }
 
-object Pack173 {
+private object Pack173 {
     val INF = 1e9.toInt()
     val graph = Array(125) { IntArray(125) }
     val d = Array(125) { IntArray(125) }

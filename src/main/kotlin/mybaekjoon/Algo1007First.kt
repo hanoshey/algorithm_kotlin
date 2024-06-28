@@ -4,10 +4,10 @@ import java.util.*
 import kotlin.math.hypot
 import kotlin.math.min
 
-var n = 0
-var min = 0.0
-lateinit var vectorArray: Array<Vector>
-fun main() = with(System.`in`.bufferedReader()) {
+private var n = 0
+private var min = 0.0
+private lateinit var vectorArray: Array<Vector>
+private fun main() = with(System.`in`.bufferedReader()) {
     var st: StringTokenizer
     repeat(readLine().toInt()) {
         min = Double.MAX_VALUE
@@ -25,7 +25,7 @@ fun main() = with(System.`in`.bufferedReader()) {
     }
 }
 
-fun solve(x: Int, y: Int, index: Int, count: Int) {
+private fun solve(x: Int, y: Int, index: Int, count: Int) {
     if (index + count > n) return
     if (index == 0) {
         min = min(min, hypot(x.toDouble(), y.toDouble()))
@@ -39,6 +39,6 @@ fun solve(x: Int, y: Int, index: Int, count: Int) {
     )
 }
 
-class Vector(var x: Int = 0, var y: Int = 0) {
+private class Vector(var x: Int = 0, var y: Int = 0) {
     operator fun plus(v: Vector) = Vector(x + v.x, y + v.y)
 }

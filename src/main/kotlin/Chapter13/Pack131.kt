@@ -3,7 +3,7 @@ package Chapter13
 import java.util.*
 import kotlin.collections.ArrayList
 
-object Pack131 {
+private object Pack131 {
     //도시의 개수, 도로의 개수, 거리 정보, 출발 도시 번호
     var n = 0
     var m = 0

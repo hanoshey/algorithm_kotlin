@@ -3,14 +3,14 @@ package Chapter17
 import java.util.*
 import kotlin.collections.ArrayList
 
-class Node10(val index: Int, val distance: Int) : Comparable<Node10> {
+private class Node10(val index: Int, val distance: Int) : Comparable<Node10> {
     //거리(비용)이 짧은 것이 높은 우선순위를 가지도록 설정
     override fun compareTo(other: Node10): Int {
         return if (distance < other.distance) -1 else 1
     }
 }
 
-object Pack174 {
+private object Pack174 {
     val INF = 1e9.toInt()
 
     //노드의 개수(N), 간선의 개수(M)

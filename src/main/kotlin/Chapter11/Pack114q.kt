@@ -3,12 +3,10 @@ package Chapter11
 import java.util.*
 import kotlin.collections.ArrayList
 
-object Pack114q {
-    var n = 0
-    val arrayList = ArrayList<Int>()
+    private var n = 0
+    private val arrayList = ArrayList<Int>()
 
-    @JvmStatic
-    fun main(args: Array<String>) {
+    private fun main(args: Array<String>) {
         val sc = Scanner(System.`in`)
         n = sc.nextInt()
         for (i in 0 until n) arrayList.add(sc.nextInt())
@@ -21,4 +19,3 @@ object Pack114q {
         }
         println(target)
     }
-}

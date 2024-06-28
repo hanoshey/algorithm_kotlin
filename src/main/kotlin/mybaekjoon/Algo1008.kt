@@ -6,7 +6,7 @@ import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 import java.util.StringTokenizer
 
-fun main() {
+private fun main() {
     val bi = BufferedReader(InputStreamReader(System.`in`))
     val token = StringTokenizer(bi.readLine())
     val bw = BufferedWriter(OutputStreamWriter(System.out))

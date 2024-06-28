@@ -3,11 +3,11 @@ package mybaekjoon
 import kotlin.math.hypot
 
 //백준 1004번 어린 왕자
-fun isContain(x1: Int, y1: Int, x2: Int, y2: Int, r: Int): Boolean {
+private fun isContain(x1: Int, y1: Int, x2: Int, y2: Int, r: Int): Boolean {
     return hypot((x2 - x1).toDouble(), (y2 - y1).toDouble()) < r
 }
 // 두 점 사이의 거리가 반지름보다 작으면 원 안에 포함된다.
-fun main() = with(System.`in`.bufferedReader()) {
+private fun main() = with(System.`in`.bufferedReader()) {
     repeat(readLine().toInt()) {
         var through = 0
         val (x1, y1, x2, y2) = readLine().split(" ").map { it.toInt() }

@@ -2,10 +2,10 @@ package mybaekjoon
 
 import java.util.*
 
-fun main() = with(System.`in`.bufferedReader()) {
+private fun main() = with(System.`in`.bufferedReader()) {
     val bw = System.out.bufferedWriter()
     val n = readLine().toInt()
-    var st:StringTokenizer
+    var st: StringTokenizer
     val resultArray = IntArray(n)
     repeat(n) {
         st = StringTokenizer(readLine())

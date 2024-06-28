@@ -3,8 +3,8 @@ package Chapter19
 import java.util.Scanner
 import kotlin.math.max
 
-class Fish1(var number: Int, var direction: Int)
-object Pack192 {
+private class Fish1(var number: Int, var direction: Int)
+private object Pack192 {
     var result = 0
     //8가지 방향에 대한 정의( ↑, ↖, ←, ↙, ↓, ↘, →, ↗ )
     val dx = intArrayOf(-1, -1, 0, 1, 1, 1, 0, -1)

@@ -3,7 +3,7 @@ package Chapter16
 import java.util.Scanner
 import kotlin.math.max
 
-object Pack163 {
+private object Pack163 {
     var n = 0//전체 상담 개수
     val t = IntArray(15)//각 상담을 완료하는데 걸리는 기간
     val p = IntArray(15)//각 상담을 완료했을 때 받을 수 있는 금액

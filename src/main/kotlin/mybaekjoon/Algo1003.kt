@@ -1,5 +1,6 @@
 package mybaekjoon
-val dp=IntArray(41)
+
+private val dp = IntArray(41)
 fun fibonacci(n: Int): Int {
     if (n == 0) {
         dp[0] = 0
@@ -12,11 +13,12 @@ fun fibonacci(n: Int): Int {
     dp[n] = fibonacci(n - 1) + fibonacci(n - 2)
     return dp[n]
 }
+
 fun main() = with(System.`in`.bufferedReader()) {
     repeat(readLine().toInt()) {
         val n = readLine().toInt()
         fibonacci(n)
-        if(n==0) println("1 0")
+        if (n == 0) println("1 0")
         else println("${dp[n - 1]} ${dp[n]}")
     }
 }

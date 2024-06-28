@@ -3,7 +3,7 @@ package Chapter16
 import java.util.*
 import kotlin.math.max
 
-object Pack161 {
+private object Pack161 {
     var testCase = 0
     var n = 0
     var m = 0

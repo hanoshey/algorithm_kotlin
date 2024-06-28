@@ -3,7 +3,7 @@ package Chapter16
 import java.util.Scanner
 import kotlin.math.max
 
-object Pack162 {
+private object Pack162 {
     var n = 0
     var dp = Array(500) { IntArray(500) }
 

@@ -4,7 +4,7 @@ import kotlin.math.abs
 import kotlin.math.pow
 import kotlin.math.sqrt
 
-fun main() = with(System.`in`.bufferedReader()) {
+private fun main() = with(System.`in`.bufferedReader()) {
     val repeat = readLine().toInt()
     val arr = Array(repeat) { IntArray(6) { 0 } }
     for (i in 0 until repeat)

@@ -3,7 +3,7 @@ package Chapter19
 import java.util.*
 
 class Fish(val x: Int, val y: Int)
-object Pack191 {
+private object Pack191 {
     val INF = 1e9.toInt()
     //맵의 크기 N
     var n = 0

@@ -3,7 +3,7 @@ package Chapter17
 import java.util.*
 import kotlin.math.min
 
-object Pack172 {
+private object Pack172 {
     val INF=1e9.toInt()
     //노드의 개수(N), 간선의 개수(M)
     var n=0

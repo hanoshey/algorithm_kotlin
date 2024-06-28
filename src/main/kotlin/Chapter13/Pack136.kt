@@ -2,7 +2,7 @@ package Chapter13
 
 import java.util.Scanner
 
-class Combination1(val n: Int, private val r: Int) {
+private class Combination1(val n: Int, private val r: Int) {
     private val now = IntArray(r)
     val result = ArrayList<ArrayList<Position2>>()
     fun combination(arr: ArrayList<Position2>, depth: Int, index: Int, target: Int) {
@@ -20,8 +20,8 @@ class Combination1(val n: Int, private val r: Int) {
     }
 }
 
-class Position2(val x: Int, val y: Int)
-object Pack136 {
+private class Position2(val x: Int, val y: Int)
+private object Pack136 {
     var n = 0
     val board = Array(6) { CharArray(6) }//복도 정보
     val teachers = ArrayList<Position2>()//선생님의 위치 정보

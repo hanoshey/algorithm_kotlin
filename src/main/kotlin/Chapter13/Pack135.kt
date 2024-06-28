@@ -4,7 +4,7 @@ import java.util.Scanner
 import kotlin.math.max
 import kotlin.math.min
 
-object Pack135 {
+private object Pack135 {
     var n = 0
 
     //연산을 수행하고자 하는 수 리스트

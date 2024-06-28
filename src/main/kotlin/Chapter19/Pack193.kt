@@ -2,8 +2,7 @@ package Chapter19
 
 import java.util.*
 import kotlin.collections.ArrayList
-
-object Pack193 {
+private object Pack193 {
     var n = 0
     var m = 0
     var k = 0

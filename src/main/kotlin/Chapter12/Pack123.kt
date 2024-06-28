@@ -2,7 +2,7 @@ package Chapter12
 
 import kotlin.math.min
 
-class Solution2 {
+private class Solution2 {
     fun solution(s: String): Int {
         var answer = s.length
         for (steps in 1 until s.length / 2 + 1) {

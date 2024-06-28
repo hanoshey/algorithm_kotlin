@@ -1,6 +1,6 @@
 package Chapter12
 
-class Solution3 {
+private class Solution3 {
     //2차원 리스트 90도 회전하기
     fun rotateMatrixBy90Degree(a: Array<IntArray>): Array<IntArray> {
         val n = a.size

@@ -2,12 +2,11 @@ package Chapter10
 
 import java.util.Scanner
 
-object Pack103 {
     //노드의 개수 V와 간선(Union)의 개수 E
     //노드의 개수는 최대 100,000개라고 가정
-    var v = 0
-    var e = 0
-    val parent = IntArray(100001)
+    private var v = 0
+    private var e = 0
+    private val parent = IntArray(100001)
     private fun findParent(x: Int): Int {
         //루트 노드가 아니라면 찾을 때까지 재귀적으로 호출
         if (x == parent[x]) return x
@@ -21,8 +20,7 @@ object Pack103 {
         else parent[a] = b
     }
 
-    @JvmStatic
-    fun main(args: Array<String>) {
+    fun main() {
         val sc = Scanner(System.`in`)
         v = sc.nextInt()
         e = sc.nextInt()
@@ -40,4 +38,3 @@ object Pack103 {
         for (i in 1..v) print("${parent[i]} ")
         println()
     }
-}
