@@ -3,8 +3,8 @@ package myleetcode
 import myleetcode.types.ListNode
 
 private fun main() {
-println(mergeTwoLists(ListNode(2),ListNode(5))?.`val`)
-    println(mergeTwoLists(ListNode(2),ListNode(5))?.next)
+    println(mergeTwoLists(ListNode(2), ListNode(5))?.`val`)
+    println(mergeTwoLists(ListNode(2), ListNode(5))?.next)
 }
 
 /**
